@@ -1,0 +1,18 @@
+package com.example.bookmanageserver.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+public class ResponseDTO<T> {
+    private List<T> data;
+    private String error;
+}
